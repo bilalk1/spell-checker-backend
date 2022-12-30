@@ -12,7 +12,7 @@ const getDictionary = () => getDictionarySync(english);
  * @param {string} paragraph 
  * @returns {array} 
  */
-const getWordsFromParagraph = paragraph => paragraph.split(" ");
+const getWordsFromParagraph = paragraph => paragraph.split(/\n| /); 
 
 /**
  * 
